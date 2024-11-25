@@ -46,6 +46,10 @@ const montaPagina = (dados) => {
     elenco.innerText = `Genero:  ${dados.elenco}`;
     body.appendChild(elenco);
 
+    const naturalidade = document.createElement('p'); 
+    naturalidade.innerText = `Naturalidade: ${dados.naturalidade}`;
+    body.appendChild(naturalidade);
+    
     const noTimeDesde = document.createElement('p');
     noTimeDesde.innerText = `No Botafogo desde: ${dados.no_botafogo_desde}`;
     body.appendChild(noTimeDesde);
