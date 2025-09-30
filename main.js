@@ -1,4 +1,4 @@
-const url = "https://botafogo-atletas.mange.li/2024-1/";
+const url = "";
 const inputBusca = document.getElementById("busca");
 const container = document.getElementById("container");
 
