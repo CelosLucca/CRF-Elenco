@@ -1,4 +1,4 @@
-const url = "";
+const url = "flamengo-atletas.json";
 const inputBusca = document.getElementById("busca");
 const container = document.getElementById("container");
 
@@ -8,14 +8,22 @@ let generoSelecionado = null;
 const carregarConteudoProtegido = (genero) => {
     generoSelecionado = genero;
 
-    pega_json(`${url}${genero}`).then((jogadores) => {
-        jogadoresAtuais = jogadores;
+    pega_json(url).then((jogadores) => {
+        let jogadoresFiltrados;
+        
+        if (genero === "all") {
+            jogadoresFiltrados = jogadores;
+        } else {
+            jogadoresFiltrados = jogadores.filter(jogador => jogador.genero === genero);
+        }
+        
+        jogadoresAtuais = jogadoresFiltrados;
         if (jogadoresAtuais.length > 0) {
             atualizarJogadores(jogadoresAtuais);
             container.style.display = "flex";
         } else {
             container.style.display = "none";
-            exibirMensagemErro("Nenhum jogador encontrado para o gÃªnero selecionado.");
+            exibirMensagemErro("Nenhum jogador encontrado para o gênero selecionado.");
         }
     }).catch(() => {
         exibirMensagemErro("Erro ao carregar os dados. Por favor, tente novamente mais tarde.");
@@ -42,6 +50,8 @@ const handleInputChange = () => {
     const jogadoresFiltrados = jogadoresAtuais.filter(
         (jogador) =>
             jogador.nome.toLowerCase().includes(termoBusca) ||
+            jogador.nome_completo.toLowerCase().includes(termoBusca) ||
+            jogador.posicao.toLowerCase().includes(termoBusca) ||
             String(jogador.id).includes(termoBusca)
     );
 
@@ -82,11 +92,21 @@ const pega_json = async (caminho) => {
     }
 };
 
+const exibirMensagemErro = (mensagem) => {
+    container.innerHTML = `<p style="text-align: center; color: red; font-size: 18px;">${mensagem}</p>`;
+};
+
+const criaPlaceholder = () => {
+    const placeholder = document.createElement("article");
+    placeholder.style.visibility = "hidden";
+    return placeholder;
+};
+
 const montaCard = (atleta) => {
     const cartao = document.createElement("article");
     const nome = document.createElement("h1");
     const imagem = document.createElement("img");
-    const detalhes = document.createElement("p");
+    const posicao = document.createElement("p");
 
     nome.innerText = atleta.nome;
     nome.style.fontFamily = "sans-serif";
@@ -96,10 +116,17 @@ const montaCard = (atleta) => {
     imagem.alt = atleta.nome;
     cartao.appendChild(imagem);
 
-    cartao.appendChild(detalhes);
+    posicao.innerText = atleta.posicao;
+    posicao.style.fontWeight = "bold";
+    cartao.appendChild(posicao);
 
     cartao.dataset.id = atleta.id;
-    cartao.dataset.nJogos = atleta.n_jogos;
+    cartao.dataset.nomeCompleto = atleta.nome_completo;
+    cartao.dataset.posicao = atleta.posicao;
+    cartao.dataset.nascimento = atleta.nascimento;
+    cartao.dataset.cidadeOrigem = atleta.cidade_origem;
+    cartao.dataset.genero = atleta.genero;
+    cartao.dataset.imagem = atleta.imagem;
 
     cartao.onclick = manipulaCLick;
 
@@ -123,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     inputBusca.addEventListener("input", handleInputChange);
-    });
+});
 
 
 

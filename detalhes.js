@@ -13,8 +13,6 @@ const pega_json = async (caminho) => {
 const dadosSessionStorage = sessionStorage.getItem('dados');
 const obj = JSON.parse(dadosSessionStorage);
 
-console.log('nJogos: ', obj.nJogos);
-
 const achaCookie = (chave) => {
     const lista = document.cookie.split('; ');
     const par = lista.find(
@@ -33,34 +31,29 @@ const montaPagina = (dados) => {
     nome.innerHTML = dados.nome;
     body.appendChild(nome);
 
+    const nomeCompleto = document.createElement('h2');
+    nomeCompleto.innerHTML = `Nome completo: ${dados.nome_completo}`;
+    nomeCompleto.style.color = '#666';
+    body.appendChild(nomeCompleto);
+
     const imagem = document.createElement('img');
     imagem.alt = 'imagem do atleta';
     imagem.src = dados.imagem;
     body.appendChild(imagem);
 
-    const nJogos = document.createElement('p');
-    nJogos.innerText = `Jogos pelo Botafogo: ${dados.n_jogos}`;
-    body.appendChild(nJogos);
-
-    const elenco = document.createElement('p');
-    elenco.innerText = `Genero:  ${dados.elenco}`;
-    body.appendChild(elenco);
-
-    const naturalidade = document.createElement('p'); 
-    naturalidade.innerText = `Naturalidade: ${dados.naturalidade}`;
-    body.appendChild(naturalidade);
-    
-    const noTimeDesde = document.createElement('p');
-    noTimeDesde.innerText = `No Botafogo desde: ${dados.no_botafogo_desde}`;
-    body.appendChild(noTimeDesde);
-
     const posicao = document.createElement('p');
-    posicao.innerText = `Função: ${dados.posicao}`;
+    posicao.innerText = `Posição: ${dados.posicao}`;
+    posicao.style.fontSize = '18px';
+    posicao.style.fontWeight = 'bold';
     body.appendChild(posicao);
- 
-   const detalhes = document.createElement('p');
-   detalhes.innerText = `${dados.detalhes}`;
-   body.appendChild(detalhes);
+
+    const nascimento = document.createElement('p');
+    nascimento.innerText = `Data de nascimento: ${dados.nascimento}`;
+    body.appendChild(nascimento);
+
+    const cidadeOrigem = document.createElement('p'); 
+    cidadeOrigem.innerText = `Cidade de origem: ${dados.cidade_origem}`;
+    body.appendChild(cidadeOrigem);
 
    const botaoVoltar = document.createElement('button');
    botaoVoltar.innerText = 'Voltar';
@@ -70,9 +63,17 @@ const montaPagina = (dados) => {
    body.appendChild(botaoVoltar);
 };
 if(sessionStorage.getItem("logado")){
-    pega_json(`https://botafogo-atletas.mange.li/2024-1/${id}`).then(
-        (r) => montaPagina(r)
-    );
+    // Buscar o jogador específico no JSON do Flamengo
+    pega_json('flamengo-atletas.json').then((jogadores) => {
+        const jogador = jogadores.find(j => j.id == id);
+        if (jogador) {
+            montaPagina(jogador);
+        } else {
+            document.body.innerHTML = "<h1>Jogador não encontrado</h1>";
+        }
+    }).catch(() => {
+        document.body.innerHTML = "<h1>Erro ao carregar dados do jogador</h1>";
+    });
 } else {
     document.body.innerHTML = "<h1>Você precisa estar logado para ter acesso</h1>";
 }

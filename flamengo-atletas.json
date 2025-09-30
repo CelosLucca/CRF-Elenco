@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "nome_completo": "Gabriel Barbosa Almeida",
+        "nome": "Gabigol",
+        "posicao": "Atacante",
+        "nascimento": "30/08/1996",
+        "cidade_origem": "São Bernardo do Campo, SP",
+        "genero": "masculino",
+        "imagem": "media/jogadores/gabigol.jpg"
+    },
+    {
+        "id": 2,
+        "nome_completo": "Bruno Henrique Pinto",
+        "nome": "Bruno Henrique",
+        "posicao": "Atacante",
+        "nascimento": "30/12/1990",
+        "cidade_origem": "Belo Horizonte, MG",
+        "genero": "masculino",
+        "imagem": "media/jogadores/bruno_henrique.jpg"
+    },
+    {
+        "id": 3,
+        "nome_completo": "Giorgian de Arrascaeta Benedetti",
+        "nome": "Arrascaeta",
+        "posicao": "Meia",
+        "nascimento": "01/06/1994",
+        "cidade_origem": "Nuevo Berlín, Uruguai",
+        "genero": "masculino",
+        "imagem": "media/jogadores/arrascaeta.jpg"
+    },
+    {
+        "id": 4,
+        "nome_completo": "Éverton Ribeiro Pereira",
+        "nome": "Éverton Ribeiro",
+        "posicao": "Meia",
+        "nascimento": "10/04/1989",
+        "cidade_origem": "São Gonçalo, RJ",
+        "genero": "masculino",
+        "imagem": "media/jogadores/everton_ribeiro.jpg"
+    },
+    {
+        "id": 5,
+        "nome_completo": "Diego Ribas da Cunha",
+        "nome": "Diego",
+        "posicao": "Meia",
+        "nascimento": "28/02/1985",
+        "cidade_origem": "Ribeirão das Neves, MG",
+        "genero": "masculino",
+        "imagem": "media/jogadores/diego.jpg"
+    },
+    {
+        "id": 6,
+        "nome_completo": "Filipe Luís Kasmirski",
+        "nome": "Filipe Luís",
+        "posicao": "Lateral-esquerdo",
+        "nascimento": "09/08/1985",
+        "cidade_origem": "Jaraguá do Sul, SC",
+        "genero": "masculino",
+        "imagem": "media/jogadores/filipe_luis.jpg"
+    },
+    {
+        "id": 7,
+        "nome_completo": "Rodrigo Caio Coquette Russo",
+        "nome": "Rodrigo Caio",
+        "posicao": "Zagueiro",
+        "nascimento": "17/09/1993",
+        "cidade_origem": "São Paulo, SP",
+        "genero": "masculino",
+        "imagem": "media/jogadores/rodrigo_caio.jpg"
+    },
+    {
+        "id": 8,
+        "nome_completo": "Diego Alves Carreira",
+        "nome": "Diego Alves",
+        "posicao": "Goleiro",
+        "nascimento": "24/06/1985",
+        "cidade_origem": "Brasília, DF",
+        "genero": "masculino",
+        "imagem": "media/jogadores/diego_alves.jpg"
+    },
+    {
+        "id": 9,
+        "nome_completo": "Marta Vieira da Silva",
+        "nome": "Marta",
+        "posicao": "Atacante",
+        "nascimento": "19/02/1986",
+        "cidade_origem": "Dois Riachos, AL",
+        "genero": "feminino",
+        "imagem": "media/jogadores/marta.jpg"
+    },
+    {
+        "id": 10,
+        "nome_completo": "Cristiane Rozeira de Souza Silva",
+        "nome": "Cristiane",
+        "posicao": "Atacante",
+        "nascimento": "15/05/1985",
+        "cidade_origem": "São Paulo, SP",
+        "genero": "feminino",
+        "imagem": "media/jogadores/cristiane.jpg"
+    },
+    {
+        "id": 11,
+        "nome_completo": "Geyse da Silva Ferreira",
+        "nome": "Geyse",
+        "posicao": "Atacante",
+        "nascimento": "10/02/1998",
+        "cidade_origem": "Salvador, BA",
+        "genero": "feminino",
+        "imagem": "media/jogadores/geyse.jpg"
+    },
+    {
+        "id": 12,
+        "nome_completo": "Ana Vitória Matos",
+        "nome": "Ana Vitória",
+        "posicao": "Meia",
+        "nascimento": "15/07/1999",
+        "cidade_origem": "Rio de Janeiro, RJ",
+        "genero": "feminino",
+        "imagem": "media/jogadores/ana_vitoria.jpg"
+    },
+    {
+        "id": 13,
+        "nome_completo": "Letícia Santos",
+        "nome": "Letícia",
+        "posicao": "Zagueira",
+        "nascimento": "22/03/1995",
+        "cidade_origem": "Brasília, DF",
+        "genero": "feminino",
+        "imagem": "media/jogadores/leticia.jpg"
+    },
+    {
+        "id": 14,
+        "nome_completo": "Barbara Micheline do Monte Barbosa",
+        "nome": "Barbara",
+        "posicao": "Goleira",
+        "nascimento": "04/07/1988",
+        "cidade_origem": "Brasília, DF",
+        "genero": "feminino",
+        "imagem": "media/jogadores/barbara.jpg"
+    }
+]
