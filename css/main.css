@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c;
+    background-color: #ffffff;
     color: white;
 }
 
@@ -98,16 +98,34 @@ body {
 
 #container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
-    background-color: #1c1c1e;
     padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     margin: 30px
 }
 
-#container > article {
+.titulo-posicao {
+    color: #d2232a;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 30px 0 15px 0;
+    padding-left: 10px;
+    border-left: 4px solid #d2232a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.container-posicao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.container-posicao > article {
     background-color: #38383c;
     border-radius: 10px;
     padding: 10px 20px;
@@ -139,20 +157,42 @@ article:hover {
 }
 
 @media (max-width: 1300px) {
-    #container > article {
+    .container-posicao > article {
         width: 23%; 
     }
 }
 
 @media (max-width: 1024px) {
-    #container > article {
+    .container-posicao > article {
         width: 30%; 
+    }
+    
+    .titulo-posicao {
+        font-size: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
-    #container > article {
+    .container-posicao > article {
         width: 100%; 
+    }
+    
+    .titulo-posicao {
+        font-size: 1.3rem;
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid #d2232a;
+        padding: 12px 15px;
+        margin: 20px 0 15px 0;
+    }
+    
+    .container-posicao {
+        gap: 15px;
+    }
+    
+    #container {
+        margin: 15px;
+        padding: 15px;
     }
 }
 

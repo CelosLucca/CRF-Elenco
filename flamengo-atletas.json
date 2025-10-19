@@ -1,14 +1,5 @@
 [
-    {
-        "id": 1,
-        "nome_completo": "Gabriel Barbosa Almeida",
-        "nome": "Gabigol",
-        "posicao": "Atacante",
-        "nascimento": "30/08/1996",
-        "cidade_origem": "São Bernardo do Campo, SP",
-        "genero": "masculino",
-        "imagem": "media/jogadores/gabigol.jpg"
-    },
+
     {
         "id": 2,
         "nome_completo": "Bruno Henrique Pinto",
@@ -17,7 +8,7 @@
         "nascimento": "30/12/1990",
         "cidade_origem": "Belo Horizonte, MG",
         "genero": "masculino",
-        "imagem": "media/jogadores/bruno_henrique.jpg"
+        "imagem": ""
     },
     {
         "id": 3,

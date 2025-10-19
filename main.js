@@ -30,18 +30,62 @@ const carregarConteudoProtegido = (genero) => {
     });
 };
 
+const agruparPorPosicao = (jogadores) => {
+    const ordemPosicoes = ['Goleiro', 'Goleira', 'Zagueiro', 'Zagueira', 'Lateral-esquerdo', 'Lateral-direito', 'Lateral-esquerda', 'Lateral-direita', 'Meia', 'Atacante'];
+    
+    const grupos = {
+        'Goleiros': [],
+        'Zagueiros': [],
+        'Laterais': [],
+        'Meias': [],
+        'Atacantes': []
+    };
+
+    jogadores.forEach(jogador => {
+        const posicao = jogador.posicao;
+        
+        if (posicao === 'Goleiro' || posicao === 'Goleira') {
+            grupos['Goleiros'].push(jogador);
+        } else if (posicao === 'Zagueiro' || posicao === 'Zagueira') {
+            grupos['Zagueiros'].push(jogador);
+        } else if (posicao.includes('Lateral')) {
+            grupos['Laterais'].push(jogador);
+        } else if (posicao === 'Meia') {
+            grupos['Meias'].push(jogador);
+        } else if (posicao === 'Atacante') {
+            grupos['Atacantes'].push(jogador);
+        }
+    });
+
+    return grupos;
+};
+
 const atualizarJogadores = (jogadores) => {
     container.innerHTML = "";
 
-    const totalJogadores = Math.ceil(jogadores.length / 5) * 5;
-
-    for (let i = 0; i < totalJogadores; i++) {
-        if (i < jogadores.length) {
-            container.appendChild(montaCard(jogadores[i]));
-        } else {
-            container.appendChild(criaPlaceholder());
+    const grupos = agruparPorPosicao(jogadores);
+    
+    Object.keys(grupos).forEach(posicaoGrupo => {
+        const jogadoresDaPosicao = grupos[posicaoGrupo];
+        
+        if (jogadoresDaPosicao.length > 0) {
+            // Criar título da seção
+            const tituloSecao = document.createElement('h2');
+            tituloSecao.innerText = posicaoGrupo.toUpperCase();
+            tituloSecao.className = 'titulo-posicao';
+            container.appendChild(tituloSecao);
+            
+            // Criar container para os jogadores da posição
+            const containerPosicao = document.createElement('div');
+            containerPosicao.className = 'container-posicao';
+            
+            jogadoresDaPosicao.forEach(jogador => {
+                containerPosicao.appendChild(montaCard(jogador));
+            });
+            
+            container.appendChild(containerPosicao);
         }
-    }
+    });
 };
 
 const handleInputChange = () => {
