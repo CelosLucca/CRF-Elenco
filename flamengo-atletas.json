@@ -1,133 +1,592 @@
 [
-
-    {
-        "id": 2,
-        "nome_completo": "Bruno Henrique Pinto",
-        "nome": "Bruno Henrique",
-        "posicao": "Atacante",
-        "nascimento": "30/12/1990",
-        "cidade_origem": "Belo Horizonte, MG",
-        "genero": "masculino",
-        "imagem": ""
-    },
-    {
-        "id": 3,
-        "nome_completo": "Giorgian de Arrascaeta Benedetti",
-        "nome": "Arrascaeta",
-        "posicao": "Meia",
-        "nascimento": "01/06/1994",
-        "cidade_origem": "Nuevo Berlín, Uruguai",
-        "genero": "masculino",
-        "imagem": "media/jogadores/arrascaeta.jpg"
-    },
-    {
-        "id": 4,
-        "nome_completo": "Éverton Ribeiro Pereira",
-        "nome": "Éverton Ribeiro",
-        "posicao": "Meia",
-        "nascimento": "10/04/1989",
-        "cidade_origem": "São Gonçalo, RJ",
-        "genero": "masculino",
-        "imagem": "media/jogadores/everton_ribeiro.jpg"
-    },
-    {
-        "id": 5,
-        "nome_completo": "Diego Ribas da Cunha",
-        "nome": "Diego",
-        "posicao": "Meia",
-        "nascimento": "28/02/1985",
-        "cidade_origem": "Ribeirão das Neves, MG",
-        "genero": "masculino",
-        "imagem": "media/jogadores/diego.jpg"
-    },
-    {
-        "id": 6,
-        "nome_completo": "Filipe Luís Kasmirski",
-        "nome": "Filipe Luís",
-        "posicao": "Lateral-esquerdo",
-        "nascimento": "09/08/1985",
-        "cidade_origem": "Jaraguá do Sul, SC",
-        "genero": "masculino",
-        "imagem": "media/jogadores/filipe_luis.jpg"
-    },
-    {
-        "id": 7,
-        "nome_completo": "Rodrigo Caio Coquette Russo",
-        "nome": "Rodrigo Caio",
-        "posicao": "Zagueiro",
-        "nascimento": "17/09/1993",
-        "cidade_origem": "São Paulo, SP",
-        "genero": "masculino",
-        "imagem": "media/jogadores/rodrigo_caio.jpg"
-    },
-    {
-        "id": 8,
-        "nome_completo": "Diego Alves Carreira",
-        "nome": "Diego Alves",
-        "posicao": "Goleiro",
-        "nascimento": "24/06/1985",
-        "cidade_origem": "Brasília, DF",
-        "genero": "masculino",
-        "imagem": "media/jogadores/diego_alves.jpg"
-    },
-    {
-        "id": 9,
-        "nome_completo": "Marta Vieira da Silva",
-        "nome": "Marta",
-        "posicao": "Atacante",
-        "nascimento": "19/02/1986",
-        "cidade_origem": "Dois Riachos, AL",
-        "genero": "feminino",
-        "imagem": "media/jogadores/marta.jpg"
-    },
-    {
-        "id": 10,
-        "nome_completo": "Cristiane Rozeira de Souza Silva",
-        "nome": "Cristiane",
-        "posicao": "Atacante",
-        "nascimento": "15/05/1985",
-        "cidade_origem": "São Paulo, SP",
-        "genero": "feminino",
-        "imagem": "media/jogadores/cristiane.jpg"
-    },
-    {
-        "id": 11,
-        "nome_completo": "Geyse da Silva Ferreira",
-        "nome": "Geyse",
-        "posicao": "Atacante",
-        "nascimento": "10/02/1998",
-        "cidade_origem": "Salvador, BA",
-        "genero": "feminino",
-        "imagem": "media/jogadores/geyse.jpg"
-    },
-    {
-        "id": 12,
-        "nome_completo": "Ana Vitória Matos",
-        "nome": "Ana Vitória",
-        "posicao": "Meia",
-        "nascimento": "15/07/1999",
-        "cidade_origem": "Rio de Janeiro, RJ",
-        "genero": "feminino",
-        "imagem": "media/jogadores/ana_vitoria.jpg"
-    },
-    {
-        "id": 13,
-        "nome_completo": "Letícia Santos",
-        "nome": "Letícia",
-        "posicao": "Zagueira",
-        "nascimento": "22/03/1995",
-        "cidade_origem": "Brasília, DF",
-        "genero": "feminino",
-        "imagem": "media/jogadores/leticia.jpg"
-    },
-    {
-        "id": 14,
-        "nome_completo": "Barbara Micheline do Monte Barbosa",
-        "nome": "Barbara",
-        "posicao": "Goleira",
-        "nascimento": "04/07/1988",
-        "cidade_origem": "Brasília, DF",
-        "genero": "feminino",
-        "imagem": "media/jogadores/barbara.jpg"
-    }
+  {
+    "id": 1,
+    "nome_completo": "Agustín Daniel Rossi",
+    "nome": "Rossi",
+    "posicao": "Goleiro",
+    "nascimento": "21/08/1995",
+    "cidade_origem": "Buenos Aires, Argentina",
+    "genero": "masculino",
+    "imagem": "media/jogadores/rossi.jpg"
+  },
+  {
+    "id": 25,
+    "nome_completo": "Matheus Cunha Queiroz",
+    "nome": "Matheus Cunha",
+    "posicao": "Goleiro",
+    "nascimento": "24/05/2001",
+    "cidade_origem": "Teresópolis, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/matheus-cunha.jpg"
+  },
+  {
+    "id": 49,
+    "nome_completo": "Francisco Dyogo Bento Alves",
+    "nome": "Dyogo Alves",
+    "posicao": "Goleiro",
+    "nascimento": "09/01/2004",
+    "cidade_origem": "Fortaleza, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/dyogo-alves.jpg"
+  },
+  {
+    "id": 4,
+    "nome_completo": "Leonardo Pereira de Souza",
+    "nome": "Léo Pereira",
+    "posicao": "Zagueiro",
+    "nascimento": "31/01/1996",
+    "cidade_origem": "Curitiba, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/leo-pereira.jpg"
+  },
+  {
+    "id": 33,
+    "nome_completo": "Cleiton de Souza Silva",
+    "nome": "Cleiton",
+    "posicao": "Zagueiro",
+    "nascimento": "28/06/2003",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/cleiton.jpg"
+  },
+  {
+    "id": 3,
+    "nome_completo": "Leonardo Ortiz de Oliveira",
+    "nome": "Léo Ortiz",
+    "posicao": "Zagueiro",
+    "nascimento": "03/01/1996",
+    "cidade_origem": "Porto Alegre, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/leo-ortiz.jpg"
+  },
+  {
+    "id": 13,
+    "nome_completo": "Danilo Boza Júnior",
+    "nome": "Danilo",
+    "posicao": "Zagueiro",
+    "nascimento": "06/04/1998",
+    "cidade_origem": "Rincão, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/danilo.jpg"
+  },
+  {
+    "id": 23,
+    "nome_completo": "João Victor da Silva Lopes",
+    "nome": "João Victor",
+    "posicao": "Zagueiro",
+    "nascimento": "26/02/2003",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/joao-victor.jpg"
+  },
+  {
+    "id": 2,
+    "nome_completo": "Guillermo Varela Olivera",
+    "nome": "Varela",
+    "posicao": "Lateral-direito",
+    "nascimento": "24/03/1993",
+    "cidade_origem": "Montevidéu, Uruguai",
+    "genero": "masculino",
+    "imagem": "media/jogadores/varela.jpg"
+  },
+  {
+    "id": 22,
+    "nome_completo": "Emerson Aparecido Leite de Souza Júnior",
+    "nome": "Emerson Royal",
+    "posicao": "Lateral-direito",
+    "nascimento": "14/01/1999",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/emerson-royal.jpg"
+  },
+  {
+    "id": 17,
+    "nome_completo": "Matías Nicolás Viña Susperreguy",
+    "nome": "Matías Viña",
+    "posicao": "Lateral-esquerdo",
+    "nascimento": "09/11/1997",
+    "cidade_origem": "Canelones, Uruguai",
+    "genero": "masculino",
+    "imagem": "media/jogadores/matias-vina.jpg"
+  },
+  {
+    "id": 6,
+    "nome_completo": "Ayrton Lucas Dantas de Medeiros",
+    "nome": "Ayrton Lucas",
+    "posicao": "Lateral-esquerdo",
+    "nascimento": "19/06/1997",
+    "cidade_origem": "Carnaúba dos Dantas, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/ayrton-lucas.jpg"
+  },
+  {
+    "id": 26,
+    "nome_completo": "Alex Sandro Lobo Silva",
+    "nome": "Alex Sandro",
+    "posicao": "Lateral-esquerdo",
+    "nascimento": "26/01/1991",
+    "cidade_origem": "Catanduva, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/alex-sandro.jpg"
+  },
+  {
+    "id": 78,
+    "nome_completo": "Ewertton Araújo da Silva",
+    "nome": "Evertton Araújo",
+    "posicao": "Meia",
+    "nascimento": "28/02/2004",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/evertton-araujo.jpg"
+  },
+  {
+    "id": 5,
+    "nome_completo": "Erick Antonio Pulgar Farfán",
+    "nome": "Erick",
+    "posicao": "Meia",
+    "nascimento": "15/01/1994",
+    "cidade_origem": "Antofagasta, Chile",
+    "genero": "masculino",
+    "imagem": "media/jogadores/erick.jpg"
+  },
+  {
+    "id": 29,
+    "nome_completo": "Allan Rodrigues de Souza",
+    "nome": "Allan",
+    "posicao": "Meia",
+    "nascimento": "03/03/1997",
+    "cidade_origem": "Araçariguama, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/allan.jpg"
+  },
+  {
+    "id": 21,
+    "nome_completo": "Jorge Luiz Frello Filho",
+    "nome": "Jorginho",
+    "posicao": "Meia",
+    "nascimento": "20/12/1991",
+    "cidade_origem": "Imbituba, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/jorginho.jpg"
+  },
+  {
+    "id": 10,
+    "nome_completo": "Giorgian Daniel de Arrascaeta Benedetti",
+    "nome": "De Arrascaeta",
+    "posicao": "Meia",
+    "nascimento": "01/06/1994",
+    "cidade_origem": "Nuevo Berlín, Uruguai",
+    "genero": "masculino",
+    "imagem": "media/jogadores/arrascaeta.jpg"
+  },
+  {
+    "id": 18,
+    "nome_completo": "Nicolás Andrés de la Cruz Arcosa",
+    "nome": "De La Cruz",
+    "posicao": "Meia",
+    "nascimento": "01/06/1997",
+    "cidade_origem": "Montevidéu, Uruguai",
+    "genero": "masculino",
+    "imagem": "media/jogadores/de-la-cruz.jpg"
+  },
+  {
+    "id": 8,
+    "nome_completo": "Saúl Ñíguez Esclápez",
+    "nome": "Saúl",
+    "posicao": "Meia",
+    "nascimento": "21/11/1994",
+    "cidade_origem": "Elche, Espanha",
+    "genero": "masculino",
+    "imagem": "media/jogadores/saul.jpg"
+  },
+  {
+    "id": 15,
+    "nome_completo": "Jorge Andrés Carrascal Guardo",
+    "nome": "Carrascal",
+    "posicao": "Meia",
+    "nascimento": "25/05/1998",
+    "cidade_origem": "Cartagena, Colômbia",
+    "genero": "masculino",
+    "imagem": "media/jogadores/carrascal.jpg"
+  },
+  {
+    "id": 27,
+    "nome_completo": "Bruno Henrique Pinto",
+    "nome": "Bruno Henrique",
+    "posicao": "Atacante",
+    "nascimento": "30/12/1990",
+    "cidade_origem": "Belo Horizonte, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/bruno-henrique.jpg"
+  },
+  {
+    "id": 23,
+    "nome_completo": "João Victor da Silva Lopes",
+    "nome": "Juninho",
+    "posicao": "Atacante",
+    "nascimento": "26/02/2003",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/juninho.jpg"
+  },
+  {
+    "id": 30,
+    "nome_completo": "Michael Richard Delgado de Oliveira",
+    "nome": "Michael",
+    "posicao": "Atacante",
+    "nascimento": "12/03/1996",
+    "cidade_origem": "Poxoréu, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/michael.jpg"
+  },
+  {
+    "id": 9,
+    "nome_completo": "Pedro Guilherme Abreu dos Santos",
+    "nome": "Pedro",
+    "posicao": "Atacante",
+    "nascimento": "20/06/1997",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/pedro.jpg"
+  },
+  {
+    "id": 11,
+    "nome_completo": "Éverton Sousa Soares",
+    "nome": "Everton",
+    "posicao": "Atacante",
+    "nascimento": "22/03/1996",
+    "cidade_origem": "Maracanaú, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/everton.jpg"
+  },
+  {
+    "id": 7,
+    "nome_completo": "Luiz de Araújo Guimarães Neto",
+    "nome": "Luiz Araujo",
+    "posicao": "Atacante",
+    "nascimento": "02/06/1996",
+    "cidade_origem": "Taubaté, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/luiz-araujo.jpg"
+  },
+  {
+    "id": 50,
+    "nome_completo": "Gonzalo Jordy Plata Jiménez",
+    "nome": "G. Plata",
+    "posicao": "Atacante",
+    "nascimento": "01/11/2000",
+    "cidade_origem": "Guayaquil, Equador",
+    "genero": "masculino",
+    "imagem": "media/jogadores/gonzalo-plata.jpg"
+  },
+  {
+    "id": 64,
+    "nome_completo": "Wallace Yan de Souza Barreto",
+    "nome": "Wallace Yan",
+    "posicao": "Atacante",
+    "nascimento": "08/02/2005",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/wallace-yan.jpg"
+  },
+  {
+    "id": 16,
+    "nome_completo": "Samuel Dias Lino",
+    "nome": "S. Lino",
+    "posicao": "Atacante",
+    "nascimento": "23/12/1999",
+    "cidade_origem": "Santo André, Brasil",
+    "genero": "masculino",
+    "imagem": "media/jogadores/samuel-lino.jpg"
+  },
+{
+    "id": 1,
+    "nome_completo": "Karolayne Alves de Oliveira",
+    "nome": "Karol Alves",
+    "posicao": "Goleira",
+    "nascimento": "10/04/2000",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/karol-alves.jpg"
+  },
+  {
+    "id": 12,
+    "nome_completo": "Bianca Rodrigues de Souza",
+    "nome": "Bibi",
+    "posicao": "Goleira",
+    "nascimento": "05/09/2002",
+    "cidade_origem": "Niterói, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/bibi.jpg"
+  },
+  {
+    "id": 32,
+    "nome_completo": "Vitória Holzel",
+    "nome": "Vivi Holzel",
+    "posicao": "Goleira",
+    "nascimento": "18/03/2001",
+    "cidade_origem": "Porto Alegre, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/vivi-holzel.jpg"
+  },
+  {
+    "id": 4,
+    "nome_completo": "Thaís Barbieri",
+    "nome": "Barbieri",
+    "posicao": "Zagueira",
+    "nascimento": "11/07/1998",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/barbieri.jpg"
+  },
+  {
+    "id": 3,
+    "nome_completo": "Ana Laura de Souza Silva",
+    "nome": "Ana Laura",
+    "posicao": "Zagueira",
+    "nascimento": "22/01/2003",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/ana-laura.jpg"
+  },
+  {
+    "id": 6,
+    "nome_completo": "Monalisa Carneiro",
+    "nome": "Monalisa",
+    "posicao": "Lateral-esquerda",
+    "nascimento": "20/05/1997",
+    "cidade_origem": "Fortaleza, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/monalisa.jpg"
+  },
+  {
+    "id": 2,
+    "nome_completo": "Fabiana Simões de Lima",
+    "nome": "Fabi Simões",
+    "posicao": "Lateral-direita",
+    "nascimento": "04/08/1989",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/fabi-simoes.jpg"
+  },
+  {
+    "id": 5,
+    "nome_completo": "Agustina Barroso",
+    "nome": "Agustina",
+    "posicao": "Zagueira",
+    "nascimento": "20/05/1993",
+    "cidade_origem": "Buenos Aires, Argentina",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/agustina.jpg"
+  },
+  {
+    "id": 14,
+    "nome_completo": "Núbia Rodrigues",
+    "nome": "Núbia",
+    "posicao": "Zagueira",
+    "nascimento": "03/11/2004",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/nubia.jpg"
+  },
+  {
+    "id": 28,
+    "nome_completo": "Ana Beatriz Barraca",
+    "nome": "Barraca",
+    "posicao": "Zagueira",
+    "nascimento": "12/02/2005",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/barraca.jpg"
+  },
+  {
+    "id": 15,
+    "nome_completo": "Flávia Mota",
+    "nome": "Flávia Mota",
+    "posicao": "Zagueira",
+    "nascimento": "01/09/1998",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/flavia-mota.jpg"
+  },
+  {
+    "id": 16,
+    "nome_completo": "Rayane Sorriso",
+    "nome": "Sorriso",
+    "posicao": "Lateral-esquerda",
+    "nascimento": "27/01/1999",
+    "cidade_origem": "Belo Horizonte, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/sorriso.jpg"
+  },
+  {
+    "id": 26,
+    "nome_completo": "Diovanna Rodrigues",
+    "nome": "Diovanna",
+    "posicao": "Lateral",
+    "nascimento": "19/06/2004",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/diovanna.jpg"
+  },
+  {
+    "id": 13,
+    "nome_completo": "Jucinara Thaís Soares Paz",
+    "nome": "Jucinara",
+    "posicao": "Lateral-esquerda",
+    "nascimento": "03/08/1993",
+    "cidade_origem": "Porto Alegre, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/jucinara.jpg"
+  },
+  {
+    "id": 19,
+    "nome_completo": "Chaiane Moreira",
+    "nome": "Chai",
+    "posicao": "Lateral-esquerda",
+    "nascimento": "09/03/1996",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/chai.jpg"
+  },
+  {
+    "id": 20,
+    "nome_completo": "Driely da Silva",
+    "nome": "Driely",
+    "posicao": "Meia",
+    "nascimento": "25/10/1996",
+    "cidade_origem": "São Gonçalo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/driely.jpg"
+  },
+  {
+    "id": 7,
+    "nome_completo": "Letícia Santos",
+    "nome": "Letícia",
+    "posicao": "Meia",
+    "nascimento": "14/02/1995",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/leticia.jpg"
+  },
+  {
+    "id": 8,
+    "nome_completo": "Juliana Ferreira",
+    "nome": "Ju Ferreira",
+    "posicao": "Meia",
+    "nascimento": "30/01/1992",
+    "cidade_origem": "Campinas, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/ju-ferreira.jpg"
+  },
+  {
+    "id": 5,
+    "nome_completo": "Thaísa de Moraes Rosa Moreno",
+    "nome": "Thaisa",
+    "posicao": "Meia",
+    "nascimento": "17/07/1988",
+    "cidade_origem": "Campinas, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/thaisa.jpg"
+  },
+  {
+    "id": 10,
+    "nome_completo": "Djeni Batista dos Santos",
+    "nome": "Djeni",
+    "posicao": "Meia",
+    "nascimento": "06/07/1994",
+    "cidade_origem": "Santos, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/djeni.jpg"
+  },
+  {
+    "id": 17,
+    "nome_completo": "Mariana Fernandes",
+    "nome": "Mariana",
+    "posicao": "Meia",
+    "nascimento": "11/11/2003",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/mariana.jpg"
+  },
+  {
+    "id": 24,
+    "nome_completo": "Leidiane Silva",
+    "nome": "Leidiane",
+    "posicao": "Meia",
+    "nascimento": "09/09/1997",
+    "cidade_origem": "Salvador, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/leidiane.jpg"
+  },
+  {
+    "id": 22,
+    "nome_completo": "Fernanda Gomes",
+    "nome": "Fernanda",
+    "posicao": "Meia",
+    "nascimento": "05/01/1994",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/fernanda.jpg"
+  },
+  {
+    "id": 9,
+    "nome_completo": "Gláucia Suelen",
+    "nome": "Glaucia",
+    "posicao": "Atacante",
+    "nascimento": "01/03/1993",
+    "cidade_origem": "São Paulo, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/glaucia.jpg"
+  },
+  {
+    "id": 27,
+    "nome_completo": "Laysa Rodrigues",
+    "nome": "Laysa",
+    "posicao": "Atacante",
+    "nascimento": "29/06/2004",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/laysa.jpg"
+  },
+  {
+    "id": 18,
+    "nome_completo": "Eduarda Rodrigues",
+    "nome": "Duda Rodrigues",
+    "posicao": "Atacante",
+    "nascimento": "23/10/2003",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/duda-rodrigues.jpg"
+  },
+  {
+    "id": 25,
+    "nome_completo": "Valéria Cantuário da Silva",
+    "nome": "Valéria Cantuário",
+    "posicao": "Atacante",
+    "nascimento": "22/10/1998",
+    "cidade_origem": "Japeri, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/valeria-cantuario.jpg"
+  },
+  {
+    "id": 11,
+    "nome_completo": "Cristiane Rozeira de Souza Silva",
+    "nome": "Cristiane",
+    "posicao": "Atacante",
+    "nascimento": "15/05/1985",
+    "cidade_origem": "Osasco, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/cristiane.jpg"
+  },
+  {
+    "id": 29,
+    "nome_completo": "Vitória Almeida",
+    "nome": "Vitória Almeida",
+    "posicao": "Atacante",
+    "nascimento": "07/12/2001",
+    "cidade_origem": "Rio de Janeiro, Brasil",
+    "genero": "feminino",
+    "imagem": "media/jogadoras/vitoria-almeida.jpg"
+  }
 ]
