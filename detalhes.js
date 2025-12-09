@@ -77,3 +77,5 @@ if(sessionStorage.getItem("logado")){
 } else {
     document.body.innerHTML = "<h1>Você precisa estar logado para ter acesso</h1>";
 }
+
+
