@@ -114,7 +114,7 @@ const manipulaLogout = () => {
 };
 
 const manipulaCLick = (e) => {
-    const id = e.currentTarget.dataset.id;
+    const id = e.currentTarget.dataset.atletaId;
     const redirecionaUrl = `detalhes.html?id=${id}`;
 
     localStorage.setItem("id", id);
@@ -164,7 +164,8 @@ const montaCard = (atleta) => {
     posicao.style.fontWeight = "bold";
     cartao.appendChild(posicao);
 
-    cartao.dataset.id = atleta.id;
+    cartao.dataset.id = atleta.numero;
+    cartao.dataset.atletaId = atleta.id;
     cartao.dataset.nomeCompleto = atleta.nome_completo;
     cartao.dataset.posicao = atleta.posicao;
     cartao.dataset.nascimento = atleta.nascimento;
